@@ -1,0 +1,240 @@
+Java Interview Questions & Answers
+
+1. What is Java?
+
+Answer:
+Java is a high-level, object-oriented programming language developed by Sun Microsystems. It is widely used for web applications, Android development,
+enterprise software, and backend systems. Java is platform-independent because Java code runs on the JVM.
+
+2. What are the main features of Java?
+
+Answer:
+Some important features are:
+
+Object-oriented
+Platform independent
+Secure
+Robust
+Multithreaded
+Portable
+Automatic memory management
+High performance with JVM optimizations
+3. What is JVM?
+
+Answer:
+JVM stands for Java Virtual Machine. It runs Java bytecode and converts it into instructions that the operating system can execute. It also manages
+memory and provides features like garbage collection.
+
+4. What is JDK?
+
+Answer:
+JDK stands for Java Development Kit. It is used to develop Java applications and includes tools such as the Java compiler, debugger, and runtime components.
+
+5. What is the difference between JDK, JRE, and JVM?
+
+Answer:
+
+JDK → Used to develop Java programs.
+JRE → Provides the environment needed to run Java programs.
+JVM → Actually executes the Java bytecode.
+
+A simple way to remember it is:
+JDK = Development + JRE
+JRE = JVM + Libraries
+
+6. What is OOP in Java?
+
+Answer:
+OOP stands for Object-Oriented Programming. It organizes programs around objects and classes.
+
+The four main principles are:
+
+Encapsulation
+Inheritance
+Polymorphism
+Abstraction
+7. What is a class?
+
+Answer:
+A class is a blueprint for creating objects. It defines the properties and behaviors that its objects will have.
+
+class Student {
+    String name;
+
+    void study() {
+        System.out.println("Student is studying");
+    }
+}
+8. What is an object?
+
+Answer:
+An object is an instance of a class. It represents an actual entity and has its own data and behavior.
+
+Student s1 = new Student();
+s1.name = "Ritika";
+
+Here, s1 is an object of the Student class.
+
+9. What is inheritance?
+
+Answer:
+Inheritance allows one class to acquire properties and methods from another class. It helps in code reuse.
+
+class Animal {
+    void eat() {
+        System.out.println("Eating");
+    }
+}
+
+class Dog extends Animal {
+}
+
+Here, Dog inherits the eat() method from Animal.
+
+10. What is polymorphism?
+
+Answer:
+Polymorphism means one name, multiple forms. In Java, it is mainly achieved through method overloading and method overriding.
+
+Overloading → Compile-time polymorphism
+Overriding → Runtime polymorphism
+11. What is method overloading?
+
+Answer:
+Method overloading means having multiple methods with the same name but different parameters in the same class.
+
+void add(int a, int b) {
+    System.out.println(a + b);
+}
+
+void add(int a, int b, int c) {
+    System.out.println(a + b + c);
+}
+12. What is method overriding?
+
+Answer:
+Method overriding occurs when a child class provides its own implementation of a method already defined in its parent class.
+
+class Animal {
+    void sound() {
+        System.out.println("Animal sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Bark");
+    }
+}
+13. What is encapsulation?
+
+Answer:
+Encapsulation means keeping data and the methods that operate on it together and restricting direct access to the data.
+
+Usually, we use private variables and public getter/setter methods.
+
+class Employee {
+    private int salary;
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+}
+
+14. What is abstraction?
+
+Answer:
+Abstraction means hiding unnecessary implementation details and showing only the required functionality.
+
+In Java, abstraction can be achieved using abstract classes and interfaces.
+
+15. What is the difference between an Array and ArrayList?
+
+Answer:
+
+Array	ArrayList
+Fixed size	Dynamic size
+Can store primitives directly	Stores objects
+Generally simpler/faster for fixed-size data	Provides useful collection methods
+Part of core Java language	Part of Collections Framework
+
+Example:
+
+int[] numbers = new int[5];
+
+ArrayList<Integer> list = new ArrayList<>();
+16. What is a String in Java?
+
+Answer:
+String is a class used to represent a sequence of characters. Strings are immutable, meaning once a String object is created, its value cannot be changed.
+
+String name = "Ritika";
+
+If we modify it, Java creates another String object rather than changing the original one.
+
+17. What is the difference between == and .equals()?
+
+Answer:
+== generally compares references when used with objects, while .equals() is used to compare the logical/content equality of objects when the class
+implements it appropriately.
+
+Example:
+
+String a = new String("Hello");
+String b = new String("Hello");
+
+System.out.println(a == b);       // false
+System.out.println(a.equals(b));  // true
+18. What is exception handling?
+
+Answer:
+Exception handling is used to handle runtime problems without abruptly terminating the program.
+
+Java provides:
+
+try
+catch
+finally
+throw
+throws
+
+Example:
+
+try {
+    int result = 10 / 0;
+} catch (ArithmeticException e) {
+    System.out.println("Cannot divide by zero");
+}
+
+19. What is garbage collection?
+
+Answer:
+Garbage collection is Java's automatic memory-management process. The JVM identifies objects that are no longer reachable and can reclaim their memory.
+
+This means developers generally don't need to manually free memory like they do in languages such as C.
+
+20. What is the difference between an interface and an abstract class?
+
+Answer:
+Both are used for abstraction, but they have different purposes.
+
+Abstract class:
+
+Can have instance variables.
+Can have constructors.
+Can contain both abstract and concrete methods.
+A class can extend only one class.
+
+Interface:
+
+Defines a contract that implementing classes follow.
+A class can implement multiple interfaces.
+Modern Java interfaces can also contain default and static methods.
+
+Interview tip: Don't just memorize definitions. Be ready to explain one small example for OOP, inheritance, polymorphism, exception handling, collections, 
+and == vs .equals()—these are common follow-up areas.
