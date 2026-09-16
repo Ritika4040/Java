@@ -1,0 +1,72 @@
+1. What is Java?
+
+Java is a high-level, general-purpose, object-oriented programming language. It was originally developed by Sun Microsystems and released in 1995.
+Java was designed with the goal of making applications portable across different operating systems.
+
+Java is widely used for:
+
+Backend development
+Web applications
+Enterprise applications
+Android development
+Desktop applications
+Cloud-based applications
+Banking and financial systems
+Large-scale distributed systems
+2. Why was Java created?
+
+Before Java, many programming languages required developers to write or compile programs specifically for a particular operating system or processor.
+
+Java introduced an important concept:
+
+Platform independence
+
+A Java program is not directly converted into machine code for one particular operating system. Instead, it is converted into bytecode, 
+which can be executed by a JVM available for different operating systems.
+
+For example, the same Java bytecode can run on:
+
+Windows
+Linux
+macOS
+
+provided an appropriate JVM is available.
+
+3. Java's "Write Once, Run Anywhere" Concept
+
+One of Java's most important characteristics is:
+
+Write Once, Run Anywhere (WORA).
+
+The process is:
+
+Source Code
+    ↓
+.java file
+    ↓
+Java Compiler (javac)
+    ↓
+Bytecode
+    ↓
+.class file
+    ↓
+JVM
+    ↓
+Machine Instructions
+    ↓
+Operating System
+
+The JVM handles the platform-specific part.
+
+Therefore, developers don't normally need to rewrite the same Java application for every operating system.
+
+Main features of Java
+
+Object-Oriented
+Platform Independent
+Simple
+Secure
+Robust
+Multithreaded
+Portable
+High Performance
