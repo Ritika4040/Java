@@ -1,0 +1,183 @@
+ ☕ Java Topics to Study
+
+### 1. Java Basics
+
+* What is Java?
+* Features of Java
+* JDK, JRE, JVM
+* Java installation & IDE
+* First Java program
+* Variables
+* Data types
+* Type casting
+* Operators
+* Input/output
+* Comments
+
+### 2. Control Statements
+
+* `if`
+* `if-else`
+* `else-if`
+* `switch`
+* `for`
+* `while`
+* `do-while`
+* `break`
+* `continue`
+
+### 3. Arrays & Strings ⭐
+
+* 1D arrays
+* 2D arrays
+* Array traversal
+* Searching
+* Sorting
+* String
+* `String` methods
+* `StringBuilder`
+* `StringBuffer`
+* `==` vs `.equals()`
+
+### 4. Methods
+
+* Creating methods
+* Parameters
+* Return values
+* Method overloading
+* Pass-by-value
+* Recursion
+
+### 5. OOP ⭐⭐⭐
+
+This is **very important for interviews**.
+
+* Class & Object
+* Constructor
+* `this`
+* `static`
+* Encapsulation
+* Inheritance
+* Polymorphism
+* Method overloading
+* Method overriding
+* Abstraction
+* Abstract class
+* Interface
+* `super`
+* Access modifiers
+* `final`
+
+### 6. Exception Handling ⭐
+
+* Exception vs Error
+* `try`
+* `catch`
+* `finally`
+* `throw`
+* `throws`
+* Checked exceptions
+* Unchecked exceptions
+* Custom exceptions
+
+### 7. Collections ⭐⭐⭐
+
+* Collection Framework
+* `List`
+* `ArrayList`
+* `LinkedList`
+* `Set`
+* `HashSet`
+* `LinkedHashSet`
+* `TreeSet`
+* `Map`
+* `HashMap`
+* `LinkedHashMap`
+* `TreeMap`
+* `Queue`
+* `PriorityQueue`
+* Iterator
+
+### 8. Java 8+ Features ⭐⭐
+
+* Lambda expressions
+* Functional interfaces
+* Stream API
+* `filter()`
+* `map()`
+* `reduce()`
+* `forEach()`
+* Optional
+* Method references
+
+### 9. Multithreading
+
+* Thread
+* `Thread` class
+* `Runnable`
+* `start()` vs `run()`
+* Thread lifecycle
+* Synchronization
+* Race conditions
+* Executor basics
+
+### 10. File Handling
+
+* File
+* Reading files
+* Writing files
+* BufferedReader
+* BufferedWriter
+* Java NIO basics
+
+### 11. Database + Java
+
+Since you're also learning **SQL**, this is useful.
+
+* JDBC
+* Database connection
+* `Connection`
+* `Statement`
+* `PreparedStatement`
+* `ResultSet`
+* CRUD operations
+* SQL + Java integration
+
+### 12. DSA with Java ⭐⭐⭐
+
+After learning the fundamentals:
+
+* Arrays
+* Strings
+* Linked List
+* Stack
+* Queue
+* Hashing
+* Binary Search
+* Sorting
+* Recursion
+* Trees
+* Binary Search Tree
+* Graph basics
+* Dynamic Programming basics
+
+---
+
+## 🎯 Priority for Fresher Interviews
+
+If you have limited time, study in this order:
+
+**Day 1:** Java Basics + Data Types + Operators
+**Day 2:** Conditions + Loops + Arrays
+**Day 3:** Strings + Methods + Recursion
+**Day 4:** OOP
+**Day 5:** Exception Handling + `static` + `final`
+**Day 6:** Collections
+**Day 7:** Java 8 + Streams
+**Day 8:** Multithreading + File Handling
+**Day 9:** JDBC + SQL
+**Day 10:** DSA + Java Interview Questions
+
+### ⭐ Most important topics
+
+**OOP + Collections + Strings + Arrays + Exception Handling + Java 8 + SQL/JDBC + DSA**
