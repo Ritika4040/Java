@@ -1,0 +1,66 @@
+Java Features
+
+Java is a high-level, object-oriented, class-based programming language designed to be simple, secure, and portable.
+
+1. Simple
+
+Java has a relatively easy syntax.
+It removes complex features like pointers and operator overloading.
+Automatic memory management makes programming easier.
+
+2. Object-Oriented
+
+Java follows OOP principles:
+
+Encapsulation
+Inheritance
+Polymorphism
+Abstraction
+
+3. Platform Independent
+
+Java follows “Write Once, Run Anywhere” (WORA).
+
+Java code is compiled into bytecode, which can run on any system having a JVM.
+
+Java Code → Bytecode → JVM → Machine Code
+
+4. Secure
+
+No direct pointer manipulation.
+Bytecode verification.
+JVM provides a controlled execution environment.
+Supports security mechanisms such as access control.
+
+5. Robust
+
+Java is designed to reduce errors through:
+
+Strong type checking
+Exception handling
+Automatic garbage collection
+Runtime checking
+
+6. Portable
+
+Java bytecode can be moved between different operating systems without changing the source code.
+
+7. Multithreaded
+
+Java supports multithreading, allowing multiple tasks to execute concurrently.
+
+Example:
+
+Thread t = new Thread();
+
+8. High Performance
+
+Java uses JIT (Just-In-Time) compilation, which converts frequently executed bytecode into native machine code for faster execution.
+
+9. Distributed
+
+Java provides APIs that support network and distributed applications.
+
+10. Dynamic
+
+Java can load classes and libraries at runtime, making applications flexible and extensible.
