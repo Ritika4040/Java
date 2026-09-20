@@ -1,0 +1,770 @@
+# Java Installation & IDE
+
+To start programming in Java, you need two basic things:
+
+1. **Java Development Kit (JDK)**
+2. **An IDE or code editor**
+
+The **JDK** provides the tools required to compile and run Java programs, while an **IDE** provides a convenient environment for writing, debugging, and managing Java projects.
+
+---
+
+# 1. Java Installation
+
+## What is Java Installation?
+
+Java installation means setting up the **JDK** on your computer so that you can create, compile, and execute Java programs.
+
+For Java development, install a suitable **JDK version** rather than only a runtime environment.
+
+Common JDK distributions include:
+
+* Oracle JDK
+* Eclipse Temurin
+* Amazon Corretto
+* Microsoft Build of OpenJDK
+* OpenJDK
+
+For learning Java, an **LTS (Long-Term Support)** version is generally a good choice.
+
+---
+
+# 2. Steps to Install Java on Windows
+
+### Step 1: Download a JDK
+
+Download a JDK suitable for your operating system.
+
+For example, you can use an OpenJDK distribution or Oracle JDK.
+
+### Step 2: Run the Installer
+
+Open the downloaded installer and follow the installation instructions.
+
+The JDK is commonly installed in a directory similar to:
+
+```text
+C:\Program Files\Java\
+```
+
+The exact folder depends on the JDK distribution and version.
+
+### Step 3: Verify Installation
+
+Open **Command Prompt** and type:
+
+```bash
+java -version
+```
+
+You should see information about the installed Java version.
+
+Then check the compiler:
+
+```bash
+javac -version
+```
+
+If both commands work, Java has been installed successfully.
+
+---
+
+# 3. Java PATH and JAVA_HOME
+
+During Java development, you may encounter two important environment variables:
+
+### PATH
+
+`PATH` tells the operating system where executable programs can be found.
+
+For Java, it allows commands such as:
+
+```bash
+java
+javac
+```
+
+to be executed from the command line.
+
+### JAVA_HOME
+
+`JAVA_HOME` is commonly used by development tools to identify the JDK installation directory.
+
+For example:
+
+```text
+JAVA_HOME = C:\Program Files\Java\jdk-xx
+```
+
+The exact path depends on your installed JDK.
+
+---
+
+# 4. Checking Java Installation
+
+Open Command Prompt:
+
+```bash
+java -version
+```
+
+Example output:
+
+```text
+java version "xx"
+```
+
+Then:
+
+```bash
+javac -version
+```
+
+Example:
+
+```text
+javac xx
+```
+
+### Difference between the commands
+
+```text
+java
+ ↓
+Runs Java applications
+
+javac
+ ↓
+Compiles Java source code
+```
+
+---
+
+# Java Compilation Process
+
+Suppose you create a file:
+
+```text
+Hello.java
+```
+
+You compile it using:
+
+```bash
+javac Hello.java
+```
+
+The compiler generates:
+
+```text
+Hello.class
+```
+
+The `.class` file contains **Java bytecode**.
+
+You then run it using:
+
+```bash
+java Hello
+```
+
+The process is:
+
+```text
+Hello.java
+    ↓
+   javac
+    ↓
+Hello.class
+    ↓
+   JVM
+    ↓
+Program Output
+```
+
+---
+
+# IDE — Integrated Development Environment
+
+## What is an IDE?
+
+**IDE stands for Integrated Development Environment.**
+
+An IDE is software that provides tools for writing, compiling, running, debugging, and managing programs.
+
+Instead of using separate applications for each task, an IDE provides most programming tools in one place.
+
+---
+
+# Popular Java IDEs
+
+Some commonly used Java IDEs are:
+
+### 1. IntelliJ IDEA
+
+IntelliJ IDEA is a popular Java IDE.
+
+It provides features such as:
+
+* Code completion
+* Syntax highlighting
+* Debugging
+* Project management
+* Refactoring
+* Git integration
+* Maven and Gradle support
+
+It is widely used for professional Java development.
+
+### 2. Eclipse
+
+Eclipse is another popular Java IDE.
+
+It provides:
+
+* Java development tools
+* Debugging
+* Code completion
+* Project management
+* Plugin support
+* Build-tool integration
+
+### 3. Apache NetBeans
+
+NetBeans is an IDE that supports Java development and provides:
+
+* Code editing
+* Debugging
+* Project management
+* GUI development tools
+* Maven/Gradle support
+
+### 4. Visual Studio Code
+
+Visual Studio Code is a lightweight code editor that can be configured for Java development using Java extensions.
+
+It is useful if you prefer a lightweight development environment.
+
+---
+
+# Features of a Java IDE
+
+A Java IDE generally provides:
+
+### Code Editor
+
+Used to write Java source code.
+
+### Syntax Highlighting
+
+Different programming elements are displayed differently to make code easier to understand.
+
+Example:
+
+```java
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello");
+    }
+}
+```
+
+### Code Completion
+
+The IDE can suggest classes, methods, variables, and keywords while you type.
+
+### Compiler Integration
+
+The IDE can compile your Java program and show compilation errors.
+
+### Debugger
+
+A debugger helps you find and fix errors by allowing you to execute a program step by step.
+
+### Error Detection
+
+Many IDEs identify syntax and other coding problems while you are writing code.
+
+### Project Management
+
+An IDE can organize:
+
+```text
+Project
+ ├── Source Code
+ ├── Libraries
+ ├── Resources
+ └── Configuration
+```
+
+### Version Control
+
+Modern IDEs commonly integrate with Git and GitHub workflows.
+
+---
+
+# First Java Program
+
+Now let's create our first Java program.
+
+```java
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+Output:
+
+```text
+Hello, World!
+```
+
+---
+
+# Understanding the First Java Program
+
+Let's understand every part.
+
+## 1. `public`
+
+```java
+public
+```
+
+`public` is an access modifier.
+
+It means the class or method can be accessed from places where Java's access rules permit public access.
+
+---
+
+## 2. `class`
+
+```java
+class
+```
+
+`class` is a Java keyword used to define a class.
+
+A Java program is commonly organized using classes and objects.
+
+---
+
+## 3. `Hello`
+
+```java
+public class Hello
+```
+
+`Hello` is the name of the class.
+
+If the class is declared `public`, the source file should normally have the same name:
+
+```text
+Hello.java
+```
+
+---
+
+# 4. `main()` Method
+
+```java
+public static void main(String[] args)
+```
+
+The `main()` method is the standard entry point used to launch a Java application.
+
+When you run:
+
+```bash
+java Hello
+```
+
+the JVM looks for the appropriate `main` method.
+
+---
+
+# Breaking Down `main()`
+
+### `public`
+
+```java
+public
+```
+
+The method is accessible to the Java launcher.
+
+### `static`
+
+```java
+static
+```
+
+The method belongs to the class rather than requiring an object of that class to be created first.
+
+### `void`
+
+```java
+void
+```
+
+The method does not return a value.
+
+### `main`
+
+```java
+main
+```
+
+This is the standard method name recognized as the application entry point.
+
+### `String[] args`
+
+```java
+String[] args
+```
+
+This parameter allows command-line arguments to be passed to the application.
+
+For example:
+
+```bash
+java Hello Java
+```
+
+The argument can be accessed through `args`.
+
+---
+
+# 5. `System.out.println()`
+
+```java
+System.out.println("Hello, World!");
+```
+
+This statement prints text to the console.
+
+### `System`
+
+`System` is a class from Java's standard library.
+
+### `out`
+
+`out` represents the standard output stream.
+
+### `println()`
+
+`println()` prints the specified value and then moves the cursor to the next line.
+
+Example:
+
+```java
+System.out.println("Hello");
+System.out.println("Java");
+```
+
+Output:
+
+```text
+Hello
+Java
+```
+
+---
+
+# 6. Semicolon
+
+```java
+;
+```
+
+The semicolon marks the end of a Java statement.
+
+Example:
+
+```java
+System.out.println("Hello");
+```
+
+---
+
+# 7. Curly Braces
+
+```java
+{
+}
+```
+
+Curly braces define a block of Java code.
+
+For example:
+
+```java
+public class Hello {
+    
+}
+```
+
+The class body is between `{` and `}`.
+
+Similarly:
+
+```java
+public static void main(String[] args) {
+    
+}
+```
+
+The method body is between the braces.
+
+---
+
+# Running the First Program Using Command Prompt
+
+Create a file named:
+
+```text
+Hello.java
+```
+
+Write:
+
+```java
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+Save the file.
+
+Open Command Prompt in that folder.
+
+### Step 1 — Compile
+
+```bash
+javac Hello.java
+```
+
+If there are no errors, Java creates:
+
+```text
+Hello.class
+```
+
+### Step 2 — Run
+
+```bash
+java Hello
+```
+
+Output:
+
+```text
+Hello, World!
+```
+
+---
+
+# Important Point: Don't Write `.class` While Running
+
+Use:
+
+```bash
+java Hello
+```
+
+Not:
+
+```bash
+java Hello.class
+```
+
+The `java` command expects the **class name**, not the `.class` filename.
+
+---
+
+# First Java Program Using an IDE
+
+If you use IntelliJ IDEA, Eclipse, NetBeans, or another Java-compatible IDE, the basic process is:
+
+```text
+Open IDE
+   ↓
+Create Java Project
+   ↓
+Configure JDK
+   ↓
+Create Java Class
+   ↓
+Write Code
+   ↓
+Run
+   ↓
+View Output
+```
+
+For example:
+
+```java
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello, Ritika!");
+    }
+}
+```
+
+Output:
+
+```text
+Hello, Ritika!
+```
+
+---
+
+# Comments in Java
+
+Comments are notes written in source code that are ignored during normal compilation.
+
+### Single-line comment
+
+```java
+// This is a comment
+```
+
+### Multi-line comment
+
+```java
+/*
+   This is a
+   multi-line comment
+*/
+```
+
+### Documentation comment
+
+```java
+/**
+ * This is a documentation comment.
+ */
+```
+
+Comments are useful for explaining code and making programs easier to maintain.
+
+---
+
+# Common Beginner Errors
+
+### Error 1: Wrong file name
+
+If you have:
+
+```java
+public class Hello
+```
+
+save the file as:
+
+```text
+Hello.java
+```
+
+### Error 2: Missing semicolon
+
+Incorrect:
+
+```java
+System.out.println("Hello")
+```
+
+Correct:
+
+```java
+System.out.println("Hello");
+```
+
+### Error 3: Wrong capitalization
+
+Java is **case-sensitive**.
+
+This is correct:
+
+```java
+System.out.println("Hello");
+```
+
+This is incorrect:
+
+```java
+system.out.println("Hello");
+```
+
+### Error 4: Incorrect class name while running
+
+If your class is:
+
+```java
+public class Hello
+```
+
+run:
+
+```bash
+java Hello
+```
+
+not:
+
+```bash
+java hello
+```
+
+---
+
+# Quick Revision
+
+```text
+JDK
+ ↓
+Provides tools for Java development
+
+IDE
+ ↓
+Provides a convenient environment for writing and managing code
+
+.java
+ ↓
+Java source code
+
+javac
+ ↓
+Compiler
+
+.class
+ ↓
+Bytecode
+
+JVM
+ ↓
+Executes bytecode
+
+Output
+ ↓
+Program result
+```
+
+### First Java Program to Remember
+
+```java
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+**Core sequence:**
+
+> **Write → Compile → Bytecode → JVM → Run → Output**
