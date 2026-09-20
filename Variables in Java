@@ -1,0 +1,413 @@
+# Variables in Java
+
+A **variable** is a named location in memory that is used to store data during the execution of a Java program. The value stored in a variable can usually be changed during program execution.
+
+Variables are one of the basic building blocks of Java programming because they allow a program to store information such as numbers, names, marks, prices, and status values.
+
+For example, a program may need variables to store a student's name, age, marks, and percentage.
+
+---
+
+## 1. Need for Variables
+
+Variables allow programs to work with data dynamically.
+
+Suppose a student has scored 85 marks. Instead of using the number `85` repeatedly throughout the program, we can store it in a variable called `marks`.
+
+Variables make programs:
+
+* Easier to understand
+* Easier to modify
+* More flexible
+* More organized
+* Easier to maintain
+
+The value of a variable can also change according to the requirements of the program.
+
+---
+
+# 2. Syntax of a Variable
+
+The general syntax is:
+
+**Data Type + Variable Name + Value**
+
+For example:
+
+```java
+int age = 20;
+```
+
+Here:
+
+* **int** is the data type.
+* **age** is the variable name.
+* **20** is the value.
+* **=** is the assignment operator.
+
+---
+
+# 3. Declaration of a Variable
+
+**Declaration** means specifying the data type and name of a variable.
+
+For example:
+
+```java
+int age;
+```
+
+At this stage, the variable has been declared but a value has not been assigned to it.
+
+Declaration tells Java that a variable with a particular name and type is required.
+
+---
+
+# 4. Initialization of a Variable
+
+**Initialization** means assigning an initial value to a variable.
+
+For example:
+
+```java
+age = 20;
+```
+
+A variable can also be declared and initialized in the same statement.
+
+```java
+int age = 20;
+```
+
+This is called **declaration with initialization**.
+
+---
+
+# 5. Assignment
+
+Assignment means giving a value to a variable or changing its existing value.
+
+For example, if a variable initially contains `20`, it can later contain `21`.
+
+The assignment operator is:
+
+```text
+=
+```
+
+The right side of the assignment provides the value, while the left side identifies the variable that receives the value.
+
+---
+
+# 6. Data Type of a Variable
+
+Every variable in Java has a **data type**.
+
+The data type determines:
+
+* What kind of data can be stored
+* How the data should be interpreted
+* What operations can be performed
+* The amount of memory generally required
+
+Common examples include:
+
+* `int` — integer numbers
+* `long` — large integer values
+* `float` — decimal numbers
+* `double` — decimal numbers with greater precision
+* `char` — a single character
+* `boolean` — true or false
+* `byte` — small integer values
+* `short` — smaller integer values
+
+Java also has reference types such as:
+
+* `String`
+* Arrays
+* Classes
+* Interfaces
+* Objects
+
+---
+
+# 7. Types of Variables in Java
+
+Java variables are commonly classified into three types:
+
+1. **Local Variables**
+2. **Instance Variables**
+3. **Static Variables**
+
+The main difference between them is where they are declared, how they are associated with classes or objects, and how long they are available.
+
+---
+
+# 8. Local Variables
+
+A **local variable** is a variable declared inside a method, constructor, or block.
+
+It is called local because its accessibility is limited to the particular method or block where it is declared.
+
+### Characteristics
+
+* Declared inside a method, constructor, or block.
+* Can be used only within its applicable scope.
+* Generally comes into existence when execution reaches its declaration.
+* Its lifetime is associated with the execution of the relevant method or block.
+* A local variable does not automatically receive a default value by the Java compiler. It must be assigned a value before it is read.
+
+Local variables are frequently used for temporary calculations and intermediate results.
+
+---
+
+# 9. Instance Variables
+
+An **instance variable** is declared inside a class but outside methods, constructors, and blocks, without the `static` keyword.
+
+Instance variables belong to **objects**.
+
+If a class is used to create multiple objects, each object normally has its own copy of its instance variables.
+
+For example, a `Student` class may contain:
+
+* Student name
+* Student age
+* Student marks
+
+Each student object can have different values for these properties.
+
+### Characteristics
+
+* Declared at class level.
+* Associated with an object.
+* Each object normally has its own copy.
+* They receive default values if no explicit initial value is provided.
+* They remain associated with an object while that object is alive.
+
+Instance variables are important in **object-oriented programming** because they represent the state or properties of an object.
+
+---
+
+# 10. Static Variables
+
+A **static variable** is a class-level variable declared using the `static` keyword.
+
+Unlike an instance variable, a static variable is associated with the **class itself**, rather than with each individual object.
+
+For example, suppose several students belong to the same college. Instead of storing a separate copy of the college name for every student object, a 
+static variable can represent information shared by the class.
+
+### Characteristics
+
+* Declared using the `static` keyword.
+* Associated with the class.
+* Generally shared among objects of that class.
+* Only one class-level variable is maintained for a given class and class-loader context.
+* Can be accessed using the class name.
+* Receives a default value if no explicit value is assigned.
+
+Static variables are useful for information that should be common to all objects of a class.
+
+---
+
+# 11. Scope of a Variable
+
+**Scope** refers to the portion of a program in which a variable can be accessed.
+
+For example:
+
+* A local variable has a limited method or block scope.
+* An instance variable can be accessed through an object within the applicable class access rules.
+* A static variable is associated with the class and can be accessed according to its access modifier.
+
+Understanding scope helps prevent errors caused by trying to access a variable from an inappropriate part of a program.
+
+---
+
+# 12. Lifetime of a Variable
+
+The **lifetime** of a variable refers to the period during which it exists and can hold a value.
+
+The lifetime depends on the type of variable.
+
+### Local Variable
+
+Its lifetime is generally connected to the execution of the method or block in which it is declared.
+
+### Instance Variable
+
+Its lifetime is associated with the object containing it.
+
+### Static Variable
+
+Its lifetime is generally associated with the loaded class and its class-loader context.
+
+---
+
+# 13. Default Values
+
+Instance and static variables receive default values when they are not explicitly initialized.
+
+Some common default values are:
+
+* Integer types → `0`
+* Floating-point types → `0.0`
+* `char` → Unicode null character
+* `boolean` → `false`
+* Reference types → `null`
+
+However, **local variables do not receive automatic default values**.
+
+A local variable must be initialized before it is used.
+
+---
+
+# 14. Variable Naming Rules
+
+Java follows certain rules for variable names.
+
+A variable name:
+
+* Can contain letters.
+* Can contain digits.
+* Can contain `_`.
+* Can contain `$`, although it is generally avoided in normal naming.
+* Cannot begin with a digit.
+* Cannot contain spaces.
+* Cannot be a Java reserved keyword.
+* Is case-sensitive.
+
+For example, `age`, `studentAge`, and `totalMarks` are valid names.
+
+`2marks` is invalid because a variable name cannot begin with a digit.
+
+---
+
+# 15. Java Naming Convention
+
+Java programmers generally follow **camelCase** for variable names.
+
+Examples:
+
+* `studentName`
+* `studentAge`
+* `totalMarks`
+* `averagePercentage`
+* `employeeSalary`
+
+Good variable names should clearly describe the information they store.
+
+For example, `studentAge` is more meaningful than `x`.
+
+Meaningful names make programs easier to read and maintain.
+
+---
+
+# 16. Constants
+
+A variable whose value should not be reassigned can be declared using the `final` keyword.
+
+Such a variable is commonly called a **constant** when it represents a fixed value.
+
+For example, a program may have a maximum allowed number of students.
+
+Constants are generally written using uppercase letters and underscores:
+
+```text
+MAX_STUDENTS
+MIN_VALUE
+PI
+```
+
+The purpose of constants is to prevent accidental reassignment and make fixed values easier to identify.
+
+---
+
+# 17. Variables and Memory
+
+When a variable is created, Java manages the memory required to represent its value.
+
+For primitive variables, the variable directly represents a primitive value.
+
+For reference variables, the variable contains a reference to an object rather than containing the complete object itself.
+
+For example, a `String` variable refers to a `String` object.
+
+This distinction between **primitive values and references** is important when learning Java memory management and object-oriented programming.
+
+---
+
+# 18. Primitive and Reference Variables
+
+Java variables can broadly hold either **primitive values** or **references**.
+
+### Primitive Variables
+
+Primitive variables store values of Java's primitive data types.
+
+Examples include:
+
+* `int`
+* `double`
+* `char`
+* `boolean`
+* `byte`
+* `short`
+* `long`
+* `float`
+
+### Reference Variables
+
+Reference variables refer to objects.
+
+Examples include variables referring to:
+
+* Strings
+* Arrays
+* User-defined objects
+* Collections
+* Other class instances
+
+This distinction becomes especially important when studying **objects, memory, inheritance, and parameter passing**.
+
+---
+
+# 19. Final Variables
+
+The `final` keyword can be used with variables to prevent reassignment after initialization.
+
+Once a final variable has been assigned a value, attempting to assign another value to that variable causes a compilation error.
+
+Final variables are useful when a value should remain unchanged throughout a particular scope or throughout the lifetime of an object, depending on how the variable is declared.
+
+---
+
+# 20. Important Points to Remember
+
+* A variable stores or represents data used by a program.
+* Every variable has a type.
+* A variable has a name and a value or reference.
+* Variables can be declared and initialized.
+* The `=` operator is commonly used for assignment.
+* Java has three commonly discussed variable categories: **local, instance, and static**.
+* Local variables have limited scope.
+* Instance variables belong to objects.
+* Static variables belong to the class.
+* Instance and static variables have default values.
+* Local variables must be initialized before use.
+* Java variable names are case-sensitive.
+* `final` can prevent reassignment.
+* Meaningful variable names improve code readability.
+
+### Easy Revision
+
+**Variable → stores data**
+
+**Local Variable → belongs to a method/block**
+
+**Instance Variable → belongs to an object**
+
+**Static Variable → belongs to a class**
+
+**final Variable → cannot be reassigned after initialization**
